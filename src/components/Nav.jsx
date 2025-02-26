@@ -1,3 +1,4 @@
+import '../assets/styles/nav.scss';
 export default function Nav() {
     return (
         <nav>
