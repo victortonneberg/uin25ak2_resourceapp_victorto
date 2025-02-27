@@ -1,5 +1,3 @@
-import resources from '../data/ressurser'
+import resources from "../data/ressurser";
 
-export default function Resources({ category }) {
-
-}
+export default function Resources({ category }) {}
