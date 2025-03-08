@@ -1,13 +1,15 @@
 import "../assets/styles/layout.scss";
 import Nav from "./Nav";
 
-export default function Layout() {
+export default function Layout({children}) {
   return (
     <>
       <header>
         <Nav />
       </header>
-      <main id="mainElement">{/* Dynamisk innhold genereres her: */}</main>
+      <main id="mainElement">
+        {children}
+      </main>
     </>
-  );
+  )
 }

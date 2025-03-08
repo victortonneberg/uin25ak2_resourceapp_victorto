@@ -16,20 +16,26 @@ header {
     margin: 0;
     padding: 0;
 
-    button {
+    a {
+      display: flex;
       flex: 1;
       height: 90px;
       width: 277px;
       font-size: 20px;
+      justify-content: center;
+      align-items: center;
+
     }
 
     .subject {
       background-color: $darkblue;
       color: $white;
-      padding: 25px 55px;
+      // padding: 25px 55px;
       border: none;
       cursor: pointer;
       font-weight: bolder;
+      text-transform: uppercase;
+      text-decoration: none;
     }
 
     .active {

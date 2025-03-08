@@ -1,13 +1,13 @@
+import { Link } from "react-router-dom"
 import "../assets/styles/nav.scss"
 export default function Nav() {
   return (
-    //prettier-ignore
-    <nav>
-            <button onClick={() => buttonClick(this, 'HTML')} className="subject active">HTML</button>
-            <button onClick={() => buttonClick(this, 'CSS')} className="subject">CSS</button>
-            <button onClick={() => buttonClick(this, 'JavaScript')} className="subject">JavaScript</button>
-            <button onClick={() => buttonClick(this, 'React')} className="subject">React</button>
-            <button onClick={() => buttonClick(this, 'Sanity and headless CMS')} className="subject">Sanity and headless CMS</button>
-        </nav>
+      <nav>
+        <Link to="html" className="subject">HTML</Link>
+        <Link to="css" className="subject">CSS</Link>
+        <Link to="javascript" className="subject">JavaScript</Link>
+        <Link to="react" className="subject">React</Link>
+        <Link to="headless-cms" className="subject">headless-cms</Link>
+      </nav>
   )
 }
