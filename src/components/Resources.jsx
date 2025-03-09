@@ -1,10 +1,8 @@
-import { useParams } from "react-router-dom";
 import resources from "../data/ressurser";
 import PageTitle from "./PageTitle";
 import "../assets/styles/resources.scss"
 
 export default function Resources({category}) {
-    // const { category } = useParams();
     const resourcesFilter = resources.filter(resource => resource.category === category);
 
     return (
