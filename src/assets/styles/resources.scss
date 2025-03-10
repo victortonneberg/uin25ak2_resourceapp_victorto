@@ -26,7 +26,27 @@
             list-style: none;
         }
     }
+}
 
+@media only screen and (max-width: 768px) {
+    main {
 
+        .resources {
+            width: 100%; 
+            margin: 0; 
+            padding: 1rem; 
 
+            h2 {
+                padding: 1rem;  
+            }
+
+            p {
+                padding-left: 1rem; 
+            }
+
+            li {
+                padding-left: 1rem;
+            }
+        }
+    }
 }
