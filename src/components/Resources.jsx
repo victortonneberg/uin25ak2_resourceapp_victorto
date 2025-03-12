@@ -8,14 +8,14 @@ export default function Resources({category}) {
 
     return (
             <article className="resources">
-                {/*Viser tittel på side avhengig av hvilken category som er sendt med som prop*/}
+                {/*Viser tittel på side avhengig av hvilken category som er sendt med som prop.*/}
                 <PageTitle title={category} />
                 <ul>
-                    {/*Bruker .map for å iterere gjennom de filtrerte ressursene*/}
+                    {/*Bruker .map for å iterere gjennom de filtrerte ressursene.*/}
                     {resourcesFilter.map(resource => (
-                        <li key={resource.title}> {/*Bruker resource.title som en unik key. Dette gjør at jeg slipper å bruke index. En "fallgruve" jeg ser her er at det kan skape problemer hvis man får 2 like titles i ressurser.js */}
-                            <h3>{resource.title}</h3> {/*Viser navnet på ressursen som er hentet*/}
-                            <a href={resource.url} target="_blank">{resource.url}</a> {/*Link som hentes fra resources*/}
+                        <li key={resource.title}> {/*Bruker resource.title som en unik key. Dette gjør at jeg slipper å bruke index. En "fallgruve" jeg ser her er at det kan skape problemer hvis man får 2 like titles i ressurser.js. */}
+                            <h3>{resource.title}</h3> {/*Viser navnet på ressursen som er hentet.*/}
+                            <a href={resource.url} target="_blank">{resource.url}</a> {/*Link som hentes fra resources.*/}
                         </li>
                     ))}
                 </ul>

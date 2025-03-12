@@ -1,4 +1,3 @@
-import { useState } from 'react'
 // import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
@@ -9,7 +8,7 @@ function App() {
         //Layout komponentet for å beholde felles UI-struktur. 
         <Layout>
             <Routes>
-                {/*Routing til de ulike sidene. Sender med prop som category, denne tas i mot i Resources.jsx*/ }
+                {/*Routing til de ulike sidene. Sender med prop som category, denne tas i mot i Resources.jsx.*/ }
                 <Route path='/html' element={<Resources category="html" />} />
                 <Route path='/css' element={<Resources category="css" />} />
                 <Route path='/javascript' element={<Resources category="javascript" />} />
