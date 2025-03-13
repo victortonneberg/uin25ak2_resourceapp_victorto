@@ -1,5 +1,5 @@
 // import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
 import Resources from './components/Resources'
 
@@ -9,6 +9,8 @@ function App() {
         <Layout>
             <Routes>
                 {/*Routing til de ulike sidene. Sender med prop som category, denne tas i mot i Resources.jsx.*/ }
+                {/*Bruker Navigate slik at HTML vises ved første load. Dette skjer ved at URL endres til "/html"*/}
+                <Route path='/' element={<Navigate to="html" />} />
                 <Route path='/html' element={<Resources category="html" />} />
                 <Route path='/css' element={<Resources category="css" />} />
                 <Route path='/javascript' element={<Resources category="javascript" />} />
